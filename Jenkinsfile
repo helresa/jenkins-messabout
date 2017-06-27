@@ -6,5 +6,10 @@ pipeline {
         echo 'Hello'
       }
     }
+    stage('Pull Code') {
+      steps {
+        git(url: 'https://helresa@bitbucket.org/goodlord/goodlord.git', branch: 'master')
+      }
+    }
   }
 }
