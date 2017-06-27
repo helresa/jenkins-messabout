@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Pull Code') {
       steps {
-        git(url: 'https://helresa@bitbucket.org/goodlord/goodlord.git', branch: 'master')
+        git(url: 'https://helresa@bitbucket.org/goodlord/goodlord.git', branch: 'master', credentialsId: 'bitbucket')
       }
     }
   }
